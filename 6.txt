@@ -1,0 +1,3 @@
+Ovo je prvi veci projekat koji sam uradio. Stoga djeluje dobro samo na prvi pogled,
+jer nije responsive. Ne moze se dakle otvoriti na mobitelu a da ne izgleda grozno.
+Dakle, otvarati iskljucivo na kompjuteru. :D
