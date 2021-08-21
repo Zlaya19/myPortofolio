@@ -531,7 +531,20 @@ span {
 .btnClass:active {
     background: silver;
 }
-    
+
+#footerLine {
+    width: 1350px;
+    height: 200px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px 2px grey, 0 0 6px 2px silver;
+}
+#footer_line {
+    font-size: 34px;
+
+}
 
 /* Calculator */
 
