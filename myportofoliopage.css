@@ -419,6 +419,18 @@ span {
     transition: 0.7s;
 }
 
+.linkProject4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkProject5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
@@ -703,6 +715,7 @@ span {
 .classItem {
     transition: 0.3s;
 }
+
 
 @media(max-width:1100px){
     #middleWrapper {
