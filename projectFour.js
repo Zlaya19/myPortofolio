@@ -6,6 +6,7 @@ const schäre = document.getElementById('schäre');
 const stein = document.getElementById('stein');
 const papir = document.getElementById('papir');
 const result = document.getElementById('realResult');
+const miniDiv = document.getElementById('miniDiv');
 
 let userChoice = '';
 let computerChoice = '';
@@ -50,6 +51,7 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
       if(computerChoice == 'stein'){
         img.src = 'bilder/kamen.png';
@@ -57,6 +59,7 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
       if(computerChoice == 'papir'){
         img.src = 'bilder/papir.png';
@@ -64,9 +67,10 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
 
-      compTurn.appendChild(element);
+      compTurn.appendChild(miniDiv);
 
       schäre.addEventListener('mouseleave', function(){
             
@@ -129,6 +133,7 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
       if(computerChoice == 'stein'){
         img.src = 'bilder/kamen.png';
@@ -136,6 +141,7 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
       if(computerChoice == 'papir'){
         img.src = 'bilder/papir.png';
@@ -143,9 +149,10 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
   
-      compTurn.appendChild(element);
+      compTurn.appendChild(miniDiv);
 
       papir.addEventListener('mouseleave', function(){
         
@@ -208,6 +215,7 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
       if(computerChoice == 'stein'){
         img.src = 'bilder/kamen.png';
@@ -215,6 +223,7 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
       if(computerChoice == 'papir'){
         img.src = 'bilder/papir.png';
@@ -222,9 +231,10 @@ const userPoints = document.getElementById('user_points');
         img.setAttribute('width', '100px');
         element.classList.add('class_div');
         element.appendChild(img);
+        miniDiv.appendChild(element)
       }
   
-    compTurn.appendChild(element);
+    compTurn.appendChild(miniDiv);
 
     stein.addEventListener('mouseleave', function(){
       
@@ -253,27 +263,7 @@ const userPoints = document.getElementById('user_points');
   });
 
     // events for a better design
-/* 
-    schäre.addEventListener('pointerdown', function(){
-      schäre.style.background = '#54d6b1';
-    }) */
-    schäre.addEventListener('mouseleave', function(){
-      schäre.style.background = rgb(224, 224, 224);
-    })
-/* 
-    stein.addEventListener('pointerdown', function(){
-      stein.style.background = '#54d6b1';
-    }) */
-    stein.addEventListener('mouseleave', function(){
-      stein.style.background = rgb(224, 224, 224);
-    })
-/* 
-    papir.addEventListener('pointerdown', function(){
-      papir.style.background = '#54d6b1';
-    }) */
-    papir.addEventListener('mouseleave', function(){
-      papir.style.background = rgb(224, 224, 224);
-    })
+
 
     schäre.addEventListener('mouseenter', function(){
       schäre.style.transform = 'scale(1.1)';
