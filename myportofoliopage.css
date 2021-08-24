@@ -541,11 +541,6 @@ img {
     max-height:85%;
 }
 
-.score {
-    font-family: 64px;
-    
-}
-
 span-rock {
     font-weight: bold;
     font-size: 72px;
@@ -561,14 +556,18 @@ span-rock {
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    box-shadow: 0 0 7px 1px grey, 0 0 7px 1px grey;
+    box-shadow: 0 0 12px 2px black, 0 0 5px 2px;
 }
 
 .class_div {
+    width: 170px;
+    position: absolute;
     display: flex;
+    border-radius: 100px;
     justify-content: center;
     align-items: center;
-    opacity: 0.75;
+    padding: 20px;
+    background: whitesmoke;
 }
 
 
@@ -878,4 +877,27 @@ span-rock {
     #headlineColor, #headlineColor2 {
         font-size: 40px;
     }
+
+    #comp_div, #user_div {
+        width: 600px;
+    }
+    #user_points, #comp_points {
+        width: 130px;
+        height: 130px;;
+    }
+    #result {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+ 
+    span-rock {
+        font-weight: bold;
+        font-size: 48px;
+        overflow: visible;
+    }
+    
 }

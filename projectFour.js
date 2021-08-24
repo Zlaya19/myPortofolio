@@ -29,16 +29,16 @@ const userPoints = document.getElementById('user_points');
       computerChoice = schäreSteinPapir();
 
       if(userChoice == computerChoice){
-        result.innerHTML = '<h1>' + 'Nerijeseno, igraj ponovo!' + '</h1>';
+        result.innerHTML = '<h1>' + 'draw, play again!' + '</h1>';
       }
       else if (computerChoice == 'stein' && userChoice == 'schäre'){
-        result.innerHTML = '<h1>' + 'Kompjuter je pobijedio!' + '</h1>';
+        result.innerHTML = '<h1>' + 'Comp win!' + '</h1>';
         compPoints.classList.add('score');
         compScore ++;
         compPoints.innerHTML = compScore;
       }
       else if (computerChoice == 'papir' && userChoice == 'schäre'){
-        result.innerHTML = '<h1>' + 'Pobijedio si!  Kompjuter je imao papir.' + '</h1>';
+        result.innerHTML = '<h1>' + 'You win, comp had paper.' + '</h1>';
         userPoints.classList.add('score');
         userScore ++;
         userPoints.innerHTML = userScore;
@@ -79,16 +79,16 @@ const userPoints = document.getElementById('user_points');
     })
 
     if(userScore == broj || compScore == broj){
-      result.innerHTML = '<span-rock>' + 'Igra je zavrsena!' + '</span-rock>';
+      result.innerHTML = '<span-rock>' + 'Game is over!' + '</span-rock>';
       if(userScore == broj){
         userPoints.style.background = '#4dffa6';
         userPoints.style.transform = 'scale(1.2)';
-        compPoints.style.background = '#ff4d4d';
+        compPoints.style.background = '#FF6666';
         img.src = 'bilder/smile.png';
         compTurn.style.backgroundImage = 'bilder/smile.png';
       }
       else if(compScore = broj){
-        userPoints.style.background = '#ff4d4d';
+        userPoints.style.background = '#FF6666'; 
         compPoints.style.background = '#4dffa6';
         compPoints.style.transform = 'scale(1.2)';
         img.src = 'bilder/sad.png';
@@ -111,16 +111,16 @@ const userPoints = document.getElementById('user_points');
     computerChoice = schäreSteinPapir();
 
       if(userChoice == computerChoice){
-        result.innerHTML = '<h1>' + 'Nerijeseno, igraj ponovo!' + '</h1>';
+        result.innerHTML = '<h1>' + 'draw, play again!' + '</h1>';
       }
       else if (computerChoice == 'stein' && userChoice == 'papir'){
-        result.innerHTML = '<h1>' + 'Pobijedio si!  Kompjuter je imao kamen.' + '</h1>';
+        result.innerHTML = '<h1>' + 'you win! Comp had rock.' + '</h1>';
         userPoints.classList.add('score');
         userScore ++;
         userPoints.innerHTML = userScore;
       }
       else if(computerChoice == 'schäre' && userChoice == 'papir'){
-        result.innerHTML = '<h1>' + 'Kompjuter je pobijedio!' + '</h1>';
+        result.innerHTML = '<h1>' + 'Comp win!' + '</h1>';
         compPoints.classList.add('score');
         compScore ++;
         compPoints.innerHTML = compScore;
@@ -161,16 +161,16 @@ const userPoints = document.getElementById('user_points');
     });
 
     if(userScore == broj || compScore == broj){
-      result.innerHTML = '<span-rock>' + 'Igra je zavrsena!' + '</span-rock>';
+      result.innerHTML = '<span-rock>' + 'Game is over!' + '</span-rock>';
       if(userScore == broj){
         userPoints.style.background = '#4dffa6';
         userPoints.style.transform = 'scale(1.2)';
-        compPoints.style.background = '#ff4d4d';
+        compPoints.style.background = '#FF6666';
         img.src = 'bilder/smile.png';
         compTurn.style.backgroundImage = 'bilder/smile.png';
       }
       else if(compScore = broj){
-        userPoints.style.background = '#ff4d4d';
+        userPoints.style.background = '#FF6666';
         compPoints.style.background = '#4dffa6';
         compPoints.style.transform = 'scale(1.2)';
         img.src = 'bilder/sad.png';
@@ -192,16 +192,16 @@ const userPoints = document.getElementById('user_points');
     computerChoice = schäreSteinPapir(); 
 
       if(userChoice == computerChoice){
-          result.innerHTML = '<h1>' + 'Nerijeseno, igraj ponovo!' + '</h1>';
+          result.innerHTML = '<h1>' + 'draw, play again!' + '</h1>';
       }
       else if (computerChoice == 'papir' && userChoice == 'stein'){
-        result.innerHTML = '<h1>' + 'Kompjuter je pobijedio!' + '</h1>';
+        result.innerHTML = '<h1>' + 'Comp win!' + '</h1>';
         compPoints.classList.add('score');
         compScore ++;
         compPoints.innerHTML = compScore;
       }
       else if (computerChoice == 'schäre' && userChoice == 'stein'){
-        result.innerHTML = '<h1>' + 'Pobijedio si!  Kompjuter je imao makaze.' + '</h1>';
+        result.innerHTML = '<h1>' + 'You win, Comp had scissors.' + '</h1>';
         userPoints.classList.add('score');
         userScore ++;
         userPoints.innerHTML = userScore;
@@ -243,16 +243,16 @@ const userPoints = document.getElementById('user_points');
     });
 
     if(userScore == broj || compScore == broj){
-      result.innerHTML = '<span-rock>' + 'Igra je zavrsena!' + '</span-rock>';
+      result.innerHTML = '<span-rock>' + 'Game is over!' + '</span-rock>';
       if(userScore == broj){
         userPoints.style.background = '#4dffa6';
         userPoints.style.transform = 'scale(1.2)';
-        compPoints.style.background = '#ff4d4d';
+        compPoints.style.background = '#FF6666';
         img.src = 'bilder/smile.png';
         compTurn.style.backgroundImage = 'bilder/smile.png';
       }
       else if(compScore = broj){
-        userPoints.style.background = '#ff4d4d';
+        userPoints.style.background = '#FF6666';
         compPoints.style.background = '#4dffa6';
         compPoints.style.transform = 'scale(1.2)';
         img.src = 'bilder/sad.png';
