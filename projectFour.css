@@ -342,48 +342,9 @@ span-rock {
         font-size: 30px;
         text-align: center;
     }
-
-    .projectDiv {
-        min-height: 318px;
-    }
-    .wrap1 {
-        min-height: 159px
-    }
-
-    .wrapA {
-        min-height: 159px
-    }
-
-    #slika {
-        margin-top: 15px
-    }
-
-    #secondNav {
-        justify-content: center;
-    }
-
-    #middleWrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 318px, 318px, 318px;
-        width: 900px;
-        min-height: 1272px;
-    }
 }
-
-.classItem {
-    transition: 0.3s;
-}
-
-
-
 
 @media(max-width:1100px){
-    #middleWrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: 508.8px, 508.8px, 508.8px, 508.8px, 508.8px, 508.8px;
-        width: 600px;
-        min-height: 2544px;
-    }
 
     .projectSection, .projectSection3, .projectSection2 {
         width: 700px

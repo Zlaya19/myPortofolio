@@ -162,8 +162,7 @@ spanD {
 #slika2 {
     width: 200px;
     height: 270px;
-    border: 2px solid rgb(199, 199, 199);
-    box-shadow: 0 0 10px 1px rgb(187, 187, 187), 0 0 10px 1px rgb(212, 212, 212);
+    box-shadow: 0 0 5px 1px black, 0 0 5px 1px black;
     float: right;
     shape-margin: 2rem;
     margin-left: 3rem;
