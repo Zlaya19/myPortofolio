@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    font-family: 'Nixie One', cursive;
+}
+
+#navigation {
+    background: #666;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px 1px black, 0 0 10px 1px black;
+}
+
+#navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 120px;
+    font-size: 30px;
+    font-weight: bold;
+    list-style-type: none;
+    grid-gap: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    grid-gap: 50px;
+}
+
+ul li a:hover {
+    color: rgb(200, 200, 200);
+}
+
+#images {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #777;
+    box-shadow: 0 0 5px 1px black, 0 0 5px 1px black;
+}
