@@ -18,6 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
     box-shadow: 0 0 10px 1px black, 0 0 10px 1px black;
 }
 
@@ -54,7 +55,7 @@ ul li a:hover {
 #mainDiv {
     position: relative;
     width: 1582px;
-    min-height: 1250px;
+    min-height: 1300px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -138,9 +139,9 @@ h3 {
 
 #image2 {
     position: fixed;
-    margin: 35px 0 0 0px;
-    opacity: 0.2;
-    z-index: 1;
+    margin: -20px 0 0 0;
+    opacity: 0.3;
+    z-index: 0;
 }
 
 #footerDiv {
@@ -153,4 +154,5 @@ h3 {
     align-items: center;
     font-size: 32px;
     font-weight: bold;
+    z-index: 1;
 }
