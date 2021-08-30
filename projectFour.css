@@ -45,9 +45,12 @@ img {
     overflow: hidden;
     object-fit: cover;
 }
+
 #slika {
     box-shadow: 0 0 5px 1px rgb(231, 231, 231), 0 0 5px 1px grey;
     padding: 20px;
+    width: 300px;
+    margin: 3px;
     background: snow;
     border-top-right-radius: 8px;
     border-top-left-radius: 45px;
