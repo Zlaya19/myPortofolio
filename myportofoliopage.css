@@ -865,6 +865,31 @@ span-rock {
     } 
 }
 
+@media(max-width:1200px){
+
+    #firstDiv {
+        height: 465px;
+    }
+
+    .projectSection, .projectSection3, .projectSection2 {
+        width: 1000px;
+    }
+
+    #headlineColor, #headlineColor2 {
+        font-size: 50px;
+    }
+
+    
+    #footerLine {
+        width: 1200px;
+    }
+
+    .appProject {
+        width: 800px;
+        height: 400px;
+    }
+}
+
 @media(max-width:1100px){
 
     body {
@@ -878,6 +903,7 @@ span-rock {
 
     #firstDiv {
         width:550px;
+        height: 650px;
     }
 
     #text1 {
@@ -937,21 +963,28 @@ span-rock {
         width: 500px;
     }
 
-    #mainWrapper {
+    /* #mainWrapper {
         width: 550px;
-    }
+        height: 790px;
+    } */
 
-    #firstDiv {
+    /* #firstDiv {
         width: 500px;
-    }
+        height: 710px;
+    } */
     .appProject {
         width: 400px;
         height: 400px;
         margin-bottom: 0;
     }
     #headlineColor, #headlineColor2 {
-        font-size: 25px;
+        font-size: 30px;
     }
+
+    /* 
+    #text1 {
+        width: 400px;
+    } */
 
     .projectSection {
         height: 600px;
@@ -977,6 +1010,31 @@ span-rock {
     }
 
     #firstDiv {
+        width: 500px;
+        height: 710px;
+    }
+
+    #mainWrapper {
+        width: 550px;
+        height: 790px;
+    }
+
+    #text1 {
+        width: 400px;
+    }
+
+    #footerLine {
+        width: 600px;
+    }
+
+}
+
+@media(max-width:500px) {
+    body {
+        width: 600px;
+    }
+
+    #firstDiv {
         height: 680px;
     }
 
@@ -990,7 +1048,8 @@ span-rock {
     }
 
     #footerLine {
-        width: 600px;
+        width: 100%;
     }
 
 }
+
