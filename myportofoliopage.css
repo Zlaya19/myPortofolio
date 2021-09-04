@@ -313,7 +313,7 @@ span {
 .projectSection {
     position: relative;
     width: 1200px;
-    min-height: 800.6px;
+    height: 800.6px;
     margin: auto;
     background:#F5F5F5;
     display: flex;
@@ -334,7 +334,7 @@ span {
 .projectSection3 {
     position: relative;
     width: 1200px;
-    min-height: 600.6px;
+    height: 600.6px;
     margin: auto;
     background:#F5F5F5;
     display: flex;
@@ -354,7 +354,7 @@ span {
 .appProject {
     position: relative;
     width: 900px;
-    min-height: 477px;
+    height: 477px;
     margin: 40px auto;
     background:#f8f8f8;
     display: flex;
@@ -718,7 +718,7 @@ span-rock {
 .projectSection2 {
     position: relative;
     width: 1200px;
-    min-height: 870px;
+    height: 870px;
     margin: auto;
     background:#F5F5F5;
     display: flex;
@@ -859,7 +859,35 @@ span-rock {
 }
 
 
+@media(max-width:1350px){
+    body{
+        width: 100%;
+    } 
+}
+
 @media(max-width:1100px){
+
+    body {
+        width: 800px;
+    }
+
+    #mainWrapper {
+        width:600px;
+        height: 730px;
+    }
+
+    #firstDiv {
+        width:550px;
+    }
+
+    #text1 {
+        width: 450px;
+    }
+
+    #footerLine {
+        width: 800px;
+    }
+
     #middleWrapper {
         grid-template-columns: 1fr;
         grid-template-rows: 508.8px, 508.8px, 508.8px, 508.8px, 508.8px, 508.8px;
@@ -873,7 +901,7 @@ span-rock {
 
     .appProject {
         width: 550px;
-        height: 300px;
+        height: 400px;
     }
     #headlineColor, #headlineColor2 {
         font-size: 40px;
@@ -909,14 +937,60 @@ span-rock {
         width: 500px;
     }
 
+    #mainWrapper {
+        width: 550px;
+    }
+
     #firstDiv {
         width: 500px;
     }
     .appProject {
         width: 400px;
-        height: 300px;
+        height: 400px;
+        margin-bottom: 0;
     }
     #headlineColor, #headlineColor2 {
         font-size: 25px;
     }
+
+    .projectSection {
+        height: 600px;
+    }
+
+    .projectSection2 {
+        height: 800px;   
+    }
+
+    .projectSection3 {
+        height: 530px;   
+    }
+
+    #PRo {
+        height: 600px;
+    }
+}
+
+
+@media(max-width:600px) {
+    body {
+        width: 600px;
+    }
+
+    #firstDiv {
+        height: 680px;
+    }
+
+    #mainWrapper {
+        width: 550px;
+        height: 800px;
+    }
+
+    #text1 {
+        width: 400px;
+    }
+
+    #footerLine {
+        width: 600px;
+    }
+
 }
