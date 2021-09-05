@@ -349,6 +349,10 @@ span-rock {
 
 @media(max-width:1100px){
 
+    body {
+        width: 100%;
+    }
+
     .projectSection, .projectSection3, .projectSection2 {
         width: 700px
     }
@@ -381,6 +385,11 @@ span-rock {
         font-weight: bold;
         font-size: 48px;
         overflow: visible;
+    }
+
+    
+    #footerLine {
+        width: 100%;
     }
 
 }
