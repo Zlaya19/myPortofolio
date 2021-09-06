@@ -204,9 +204,9 @@ span {
 #middleWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 318px, 318px, 318px;
+    grid-template-rows: 318px, 318px, 318px, 318px;
     width: 1200px;
-    min-height: 1200.6px;
+    min-height: 1450px;
     margin: 100px auto;
     background:#F5F5F5;
     box-shadow: 0 0 8px 2px #808080, 0 0 6px 2px #C0C0C0;
@@ -918,7 +918,7 @@ span-rock {
         grid-template-columns: 1fr;
         grid-template-rows: 508.8px, 508.8px, 508.8px, 508.8px, 508.8px, 508.8px;
         width: 500px;
-        min-height: 3200px;
+        min-height: 3500px;
     }
 
     .projectSection, .projectSection3, .projectSection2 {
