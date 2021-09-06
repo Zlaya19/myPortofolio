@@ -9,6 +9,11 @@
 body {
     background: #444;
     font-family: 'Bangers', cursive;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h2 {

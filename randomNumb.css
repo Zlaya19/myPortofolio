@@ -22,46 +22,6 @@ h2 {
     font-size: 54px;
 }
 
-.h3Center {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    width: 180px;
-    font-family: 'Rajdhani', sans-serif;
-    
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-
-    text-align: center;
-    background: #ff4500;
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
-    box-shadow: 0 0 3px 1px rgb(214, 214, 214), 0 0 3px 1px rgb(202, 202, 202);
-}
-
-
-#PRo1 {
-    position: absolute;
-    top: 15px;
-    font-size: 40px;
-    width: 280px;
-}
-
-#headlineColor {
-    font-family: 'Monoton', cursive;
-    position: absolute;
-    top: 110px;
-    font-size: 70px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 0 2px #000000, 0 0 2px #000000;
-}
-
 .headline {
     text-align: center;
     padding: 15px 35px;

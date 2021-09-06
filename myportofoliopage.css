@@ -850,7 +850,7 @@ span-rock {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 318px, 318px, 318px;
         width: 900px;
-        min-height: 1272px;
+        min-height: 1800px;
     }
 }
 
@@ -918,7 +918,7 @@ span-rock {
         grid-template-columns: 1fr;
         grid-template-rows: 508.8px, 508.8px, 508.8px, 508.8px, 508.8px, 508.8px;
         width: 500px;
-        min-height: 2544px;
+        min-height: 3200px;
     }
 
     .projectSection, .projectSection3, .projectSection2 {
