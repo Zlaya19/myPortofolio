@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #444;
+    font-family: 'Bangers', cursive;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+.headline {
+    text-align: center;
+    padding: 15px 35px;
+    box-shadow: 0 0 12px 1px #222, 0 0 12px 1px #222;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background: #d40028;
+}
+
+.paragraphDate {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-shadow: 0 0 2px grey, 0 0 2px black;
+}
+
+#inputMonth {
+    padding: 7px 45px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    box-shadow: 0 0 4px 2px #333, 0 0 4px 2px #333;
+}
+
+#inputDay {
+    padding: 7px 45px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    box-shadow: 0 0 4px 2px #333, 0 0 4px 2px #333;
+}
+
+
+#containerDate {
+    width: 600px;
+    min-height: 200px;
+    background: #b30021;
+    padding: 25px;
+    margin: 50px auto;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    box-shadow: 0 0 25px 1px #222, 0 0 25px 1px #222;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#outputDate {
+    width: 100%;
+    min-height: 100px;
+    background: #E4002B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 28px;
+    box-shadow: 0 0 14px 1px #111, 0 0 14px 1px #222;
+    display: none;
+}
