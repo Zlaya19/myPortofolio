@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #bbb;
+    background: snow;
     font-family: 'KoHo', sans-serif;
 }
 
@@ -15,9 +15,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #aaa;
+    background: whitesmoke;
     height: 140px;
-    box-shadow: 0 0 6px 1px #888, 0 0 6px 1px #888;
+    box-shadow: 0 0 8px 2px #808080, 0 0 6px 2px #C0C0C0;
 }
 
 #list {
@@ -40,22 +40,36 @@ body {
     color: #777;
 }
 
-#mainWrapper {
-    height: 1500px;
-    background: #aaa;
-    margin: 50px;
+#mainHeadline {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    text-shadow: 0 0 20px grey, 0 0 20px grey;
+    color: snow;
+    font-size: 82px;
+}
+
+#mainWrapper {
+    width: 1200px;
+    height: 2100px;
+    background: whitesmoke;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    box-shadow: 0 0 6px 1px #888, 0 0 6px 1px #888;
+    box-shadow: 0 0 6px 1px #ccc, 0 0 6px 1px #ccc;
 }
 
 .partWrapper {
     position: relative;
     width: 330px;
     height: 450px;
-    background: #999;
+    background: #ddd;
     margin: 15px;
+    border-radius: 8px;
     box-shadow: 0 0 3px 1px grey, 0 0 3px 1px grey;
 }
 
@@ -65,6 +79,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(images/pc.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     box-shadow: 0 0 3px 1px black, 0 0 3px 1px black;
@@ -74,7 +93,8 @@ body {
     font-size: 32px;
     border: 2px solid grey;
     padding: 10px 35px;
-    box-shadow: 0 0 20px 1px grey, 0 0 20px 1px grey;
+    background: silver;
+    opacity: 0.8;
 }
 
 .middleWrapper {
@@ -84,15 +104,15 @@ body {
     left: 105px;
     top: 140px;
     z-index: 1;
-    background: #888;
-    border: 6px solid #666;
-    border-radius: 25px;
+    background: #ccc;
+    border: 4px solid #999;
+    border-radius: 40px;
     box-shadow: 0 0 3px 1px rgb(70, 70, 70), 0 0 3px 1px rgb(70, 70, 70);
 }
 
 #footerLine {
     height: 140px;
-    background: #aaa;
+    background: whitesmoke;
     display: flex;
     font-size: 28px;
     justify-content: center;
