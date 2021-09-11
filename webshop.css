@@ -7,7 +7,7 @@
 }
 
 body {
-    background: snow;
+    background: rgb(214, 214, 214);
     font-family: 'KoHo', sans-serif;
 }
 
@@ -17,6 +17,7 @@ body {
     align-items: center;
     background: whitesmoke;
     height: 140px;
+    text-transform: uppercase;
     box-shadow: 0 0 8px 2px #808080, 0 0 6px 2px #C0C0C0;
 }
 
@@ -37,7 +38,7 @@ body {
 }
 
 #list li a:hover {
-    color: #777;
+    color: #aaa;
 }
 
 #mainHeadline {
@@ -47,30 +48,38 @@ body {
     height: 160px;
     text-shadow: 0 0 20px grey, 0 0 20px grey;
     color: snow;
+    background:silver;
+    margin: 15px 0;
+    box-shadow: 0 0 3px 1px grey, 0 0 3px 1px grey;
     font-size: 82px;
 }
 
 #mainWrapper {
-    width: 1200px;
+    width: 1350px;
     height: 2100px;
-    background: whitesmoke;
+    background: silver;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    box-shadow: 0 0 6px 1px #ccc, 0 0 6px 1px #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    /* box-shadow: 8px 0 15px -4px rgba(100, 100, 100, 0.8), -8px 0 8px -4px rgba(100, 100, 100, 0.8); */
 }
 
 .partWrapper {
     position: relative;
-    width: 330px;
+    width: 310px;
     height: 450px;
     background: #ddd;
     margin: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 3px 1px grey, 0 0 3px 1px grey;
+    border-radius: 24px;
+    box-shadow: 0 0 30px 1px #666, 0 0 30px 1px #666;
 }
 
 .topWrapper {
@@ -82,11 +91,14 @@ body {
     background: url(images/pc.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0 0 3px 1px black, 0 0 3px 1px black;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    /* box-shadow: 0 0 3px 1px black, 0 0 3px 1px black; */
 }
 
 .headline {
@@ -101,21 +113,54 @@ body {
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 105px;
+    left: 95px;
     top: 140px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    /* text-shadow: 0 0 2px #666, 0 0 2px #666; */
     background: #ccc;
     border: 4px solid #999;
     border-radius: 40px;
     box-shadow: 0 0 3px 1px rgb(70, 70, 70), 0 0 3px 1px rgb(70, 70, 70);
 }
 
+.bottomWrapper {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#btn {
+    padding: 10px 20px;
+    background: rgb(117, 199, 231);
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid grey;
+    /* text-shadow: 0 0 2px #666, 0 0 2px #666; */
+    box-shadow: 0 0 10px 1px #C0C0C0, 0 0 10px 1px #C0C0C0;
+}
+
+#btn:hover {
+    background:rgb(99, 182, 214)
+}
+
 #footerLine {
     height: 140px;
-    background: whitesmoke;
+    background: silver;
     display: flex;
     font-size: 28px;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     box-shadow: 0 0 6px 1px #888, 0 0 6px 1px #888;
 }
