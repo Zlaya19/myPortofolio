@@ -9,6 +9,8 @@
 body {
     background: rgb(214, 214, 214);
     font-family: 'KoHo', sans-serif;
+    width: 1350px;
+    margin: auto;
 }
 
 #navbar {
