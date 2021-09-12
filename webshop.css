@@ -11,6 +11,8 @@ body {
     font-family: 'KoHo', sans-serif;
     width: 1350px;
     margin: auto;
+    padding: 10px;
+    box-shadow: 0 0 30px 1px #666, 0 0 30px 1px #666;
 }
 
 #navbar {
@@ -57,7 +59,7 @@ body {
 }
 
 #mainWrapper {
-    width: 1350px;
+    width: 1330px;
     height: 2100px;
     background: silver;
     margin: auto;
@@ -95,8 +97,8 @@ body {
     background-size: auto;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-top: 2px solid #ddd;
     border-right: 2px solid #ddd;
     border-left: 2px solid #ddd;
