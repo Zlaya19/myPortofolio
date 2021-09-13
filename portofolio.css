@@ -194,6 +194,8 @@ img {
     padding: 15px 20px;
     font-weight: bold;
     font-size: 20px;
+    text-decoration: overline;
+    text-shadow: 0 0 2px grey, 0 0 2px grey;
     background: rgb(228, 228, 228);
     border-bottom-right-radius: 32px;
 }
@@ -221,6 +223,13 @@ img {
     
     #navImage {
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #list {
+        grid-gap: 60px;
     }
 }
 
