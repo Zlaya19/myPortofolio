@@ -99,6 +99,10 @@ img {
     flex-direction: column;
     border: 4px solid #fff;
     margin: 0 -5px;
+    animation: slider;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 #rightAbout {
@@ -108,6 +112,20 @@ img {
     background: #d6d6d6;
     border: 4px solid #eee;
     margin: 0 -5px;
+    animation: sliderSecond;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slider {
+    0%  {left: -700px}
+    100% {left: 0}
+}
+
+@keyframes sliderSecond {
+    0%  {right: -1000px}
+    100% {right: 0}
 }
 
 #text1 {
