@@ -209,7 +209,7 @@ h2 {
 
 .wrapperTop {
     width: 100%;
-    height: 44%;
+    height: 50%;
     background: #C0C0C0;
     border: 3px solid #ddd;
     border-bottom-left-radius: 5px;
@@ -218,55 +218,55 @@ h2 {
     background-repeat: no-repeat;
     background-size: auto;
 }
-/* 
+ 
 #wrap1 {
-    background: url(images/colorChange.png);
+    background: url(images/project1.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap2 {
-    background: url(images/pass.png);
+    background: url(images/project2.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap3 {
-    background: url(images/calc2.png);
+    background: url(images/project3.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap4 {
-    background: url(images/stone.png);
+    background: url(images/project4.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap5 {
-    background: url(images/pickTheRightCube.png);
+    background: url(images/project5.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap6 {
-    background: url(images/LawyerWebImage.png);
+    background: url(images/project6.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap7 {
-    background: url(images/colorChange.png);
+    background: url(images/project7.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #wrap8 {
-    background: url(images/colorChange.png);
+    background: url(images/project8.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
-
+/*
 #wrap9 {
     background: url(images/colorChange.png);
     background-repeat: no-repeat;
@@ -305,6 +305,13 @@ h2 {
     border-bottom-right-radius: 32px;
 }
 
+.projectAbout {
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
 .headlineH3 {
     border: none;
     width: 120px;
@@ -320,9 +327,12 @@ h2 {
 #projectHeader {
     text-align: center;
     width: 96%;
-    margin: 2px auto;
-    background: #ccc;
-    box-shadow: 0 0 3px 1px #333, 0 0 3px 1px #333;
+    margin: -2px auto;
+    background: #C0C0C0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 3px solid #ddd;
+    box-shadow: 0 0 5px 1px #333, 0 0 5px 1px #333;
 }
 
 #footerLine {
@@ -470,3 +480,8 @@ h2 {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .projectAbout {
+        font-size: 18px;
+    }
+}
