@@ -93,6 +93,48 @@ img {
     text-shadow: 0 0 30px #666, 0 0 30px #666;
 }
 
+/* 
+#headerText {
+    position: absolute;
+    font-size: 120px;
+    color: #eee;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+    box-shadow: 0 0 15px 1px #666;
+    text-shadow: 0 0 30px #666, 0 0 30px #666;
+}
+
+span {
+    color: rgba(75, 37, 110, 0.753);
+    letter-spacing: 10px;
+    font-size: 200px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ddd;
+    font-weight: bold;
+    text-shadow: 0 0 30px #666, 0 0 30px #666;
+}
+*/
+
+#headerText {
+    position: absolute;
+    font-size: 120px;
+    color: #eee;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+    text-shadow: 0 0 30px #666, 0 0 30px #666;
+    animation: disappearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    border-radius: 24px;
+}
+
+@keyframes disappearing {
+    0%  {opacity: 1}
+    100% {opacity: 0}
+}
+
 span {
     color: rgba(75, 37, 110, 0.753);
     letter-spacing: 10px;
@@ -141,7 +183,7 @@ h2 {
     font-size: 20px;
     text-align: center;
     text-decoration: overline;
-    text-shadow: 0 0 2px grey, 0 0 2px grey;
+    text-shadow: 0 0 1px grey, 0 0 1px grey;
     background: rgb(228, 228, 228);
     border-bottom-right-radius: 32px;
 }
@@ -326,7 +368,7 @@ h2 {
     font-size: 20px;
     text-align: center;
     text-decoration: overline;
-    text-shadow: 0 0 2px grey, 0 0 2px grey;
+    text-shadow: 0 0 1px grey, 0 0 1px grey;
     background: rgb(228, 228, 228);
     border-bottom-right-radius: 32px;
 }
@@ -345,7 +387,7 @@ h2 {
     font-weight: bold;
     font-size: 20px;
     text-decoration: overline;
-    text-shadow: 0 0 2px grey, 0 0 2px grey;
+    text-shadow: 0 0 1.5px grey, 0 0 1.5px grey;
     background: rgb(228, 228, 228);
     border-bottom-right-radius: 32px;
 }
@@ -485,7 +527,7 @@ h2 {
         margin: 0;
     }
     
-    #headerDiv {
+    #headerText {
         font-size: 35px;
         padding: 0 50px;
         min-height: 300px;
