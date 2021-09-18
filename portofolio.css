@@ -1,10 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap'); */
 
 @font-face {
     font-family: 'aaargh';
     src: url('./font/Aaargh-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url('./font/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html {
+    height: 100%;
 }
 
 * {
@@ -20,9 +33,11 @@ a {
 }
 
 body {
-    min-height: 1000px;
+    min-height: 100%;
+    /* min-height: 1000px; */
     background: #fff;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani';
+    line-height: 1.3;
     box-shadow: 0 0 30px 1px rgb(223, 223, 223), 0 0 30px 1px rgb(212, 212, 212);
 }
 #navbar {
@@ -115,25 +130,48 @@ span {
 }
 */
 
-#headerText {
-    position: absolute;
-    font-size: 120px;
-    color: #eee;
-    margin-top: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'aaargh';
-    text-shadow: 0 0 30px #666, 0 0 30px #666;
-    animation: disappearing;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    border-radius: 24px;
+@media screen and (max-width: 1450px) {
+    .headerText {
+        display: none;
+    }
 }
 
-@keyframes disappearing {
-    0%  {opacity: 1}
-    100% {opacity: 0}
+@media screen and (min-width: 1450px) {
+
+    .headerText {
+        position: absolute;
+        font-size: 120px;
+        color: #eee;
+        margin-top: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'aaargh';
+        text-shadow: 0 0 30px #666, 0 0 30px #666;
+        animation: disappearing;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        border-radius: 24px;
+    }
+
+
+    @keyframes disappearing {
+        0%  {opacity: 1}
+        100% {opacity: 0}
+    }
+
+    @keyframes slider {
+        0%  {left: -700px}
+        100% {left: 0}
+    }
+    
+    @keyframes sliderSecond {
+        0%  {right: -1000px}
+        100% {right: 0}
+    }
+
 }
+
+
 
 span {
     color: rgba(75, 37, 110, 0.753);
@@ -223,16 +261,6 @@ h2 {
     border-radius: 24px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-}
-
-@keyframes slider {
-    0%  {left: -700px}
-    100% {left: 0}
-}
-
-@keyframes sliderSecond {
-    0%  {right: -1000px}
-    100% {right: 0}
 }
 
 #text1 {
@@ -476,6 +504,7 @@ h2 {
 
 
 @media screen and (max-width: 800px) {
+
     #list {
         grid-gap: 60px;
     }
@@ -541,6 +570,11 @@ h2 {
 
 
 @media screen and (max-width: 400px) {
+
+    html {
+        width: 100%;
+    }
+
     .projectAbout {
         font-size: 18px;
     }
