@@ -299,7 +299,7 @@ h2 {
     box-shadow: 0 0 30px 1px #666, 0 0 30px 1px #666;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
-    margin-bottom: 80px;
+    margin: 0 10px 80px 10px;
 }
 
 .wrapper:hover {
