@@ -305,6 +305,7 @@ h2 {
 .wrapper:hover {
     transform: scale(1.015);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .wrapper:not(:hover) {
