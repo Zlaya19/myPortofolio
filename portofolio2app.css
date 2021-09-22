@@ -99,7 +99,7 @@ h2 {
 }
 
 #mainSection {
-    min-height: 550px;
+    height: 550px;
     width: 100%;
     margin: 25px auto;
     /* padding: 10px; */
@@ -109,7 +109,7 @@ h2 {
 
 #container {
     width: 90%;
-    min-height: 550px;
+    height: 550px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -168,9 +168,9 @@ spanB {
 
 .btnClass {
     padding: 6px 20px 6px 20px;
-    font-family: rajdhani;
+    font-family: 'rajdhani';
     border: none;
-    width: 120px;
+    width: 28%;
     box-shadow: 0 0 3px 1px #666, 0 0 3px 1px #666, inset 0 0 4px 1px #aaa;
     border-radius: 20px;
     background:rgb(209, 209, 209);
@@ -185,12 +185,10 @@ spanB {
 }
 
 .btnClass:hover {
-    transition: 0.4s;
+    /* transition: 0.4s; */
     background: #ddd;
 }
-.btnClass:not(:hover) {
-    transition: 0.4s;
-}
+
 
 .btnClass:active {
     background: #ccc;
@@ -341,3 +339,86 @@ spanB {
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    #containerCalc {
+        width: 400px;
+        height: 240px;
+    }
+
+    .btnClass {
+        font-size: 17px;
+        padding: 0;
+    }
+    #output {
+        font-size: 34px;
+    }
+    
+    #delete,#copy {
+        width: 80px;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #container {
+        height: 300px;
+    }
+
+    #mainSection {
+        height: 350px;
+    }
+
+    #containerCalc {
+        width: 350px;
+        height: 220px;
+    }
+
+    #red {
+        height: 70px;
+    }
+
+    spanB {
+        font-size: 28px;
+    }
+    .btnClass {
+        font-size: 15px;
+        height: 50px;
+        width: 28%;
+        text-align: center;
+    }
+    #output {
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    #containerCalc {
+        width: 280px;
+        height: 190px;
+    }
+
+    #red {
+        height: 60px;
+    }
+
+    spanB {
+        font-size: 24px;
+    }
+    .btnClass {
+        font-size: 15px;
+        height: 40px;
+        text-align: center;
+    }
+    #output {
+        font-size: 26px;
+    }
+
+    #delete,#copy {
+        width: 65px;
+    } 
+}
+
+

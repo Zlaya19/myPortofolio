@@ -82,7 +82,7 @@ img {
 
 #list {
     display: flex;
-    grid-gap: 120px;
+    grid-gap: 100px;
     list-style: none;
     font-size: 27px;
     /* font-weight: bold; */

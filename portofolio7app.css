@@ -91,7 +91,7 @@ img {
 
 #list {
     display: flex;
-    grid-gap: 120px;
+    grid-gap: 100px;
     list-style: none;
     font-size: 27px;
     /* font-weight: bold; */
@@ -154,6 +154,7 @@ h2 {
     padding-bottom: 5px;
     font-size: 14px;
     color: #555;
+    text-align: center;
     font-family: 'komika axis';
     /* text-shadow: 0 0 2px grey, 0 0 2px black; */
 }
@@ -284,10 +285,6 @@ h2 {
     }
 }
 
-
-
-
-
 @media screen and (max-width: 800px) {
 
     #list {
@@ -311,6 +308,54 @@ h2 {
     }
     #navImage {
         display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #containerDate {
+        width: 400px;
+    }
+
+    .headline {
+        width: 70%;
+        font-size: 28px;
+        padding: 15px 15px;
+    }
+
+    #inputDay {
+        font-size: 13px;
+    }
+
+    #inputMonth {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #containerDate {
+        width: 280px;
+    }
+    
+    .headline {
+        width: 90%;
+        font-size: 22px;
+        padding: 15px 5px;
+    }
+
+    #inputDay {
+        width: 220px;
+    }
+
+    #inputMonth {
+        width: 220px;
+    }
+
+
+    #outputDate {
+        font-size: 17px;
     }
 
 }
