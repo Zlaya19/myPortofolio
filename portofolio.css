@@ -49,7 +49,7 @@ body {
     background: linear-gradient( #ccc, whitesmoke);
     /* border-top: 4px solid #eee; */
     border-bottom: 4px solid #fff;
-    box-shadow: 0 0 8px 2px #ccc, 0 0 6px 2px #C0C0C0;
+    box-shadow: 0 0 8px 2px #ccc, 0 0 6px 2px #C0C0C0, inset 0 0 4px 1px #ddd;
 }
 #list li a:hover {
     color: #888;
@@ -67,7 +67,7 @@ img {
     object-fit: cover;
 }
 #navImage {
-    box-shadow: 0 0 12px 1px #999;
+    box-shadow: 0 0 12px 1px #999, inset 0 0 4px 1px #ddd;
     clip-path: inset(0px -15px 0px -15px);
     padding: 20px;
     width: 300px;
@@ -207,7 +207,7 @@ span {
     position: absolute;
     top: 15px;
     right: 30px;
-    box-shadow: 0 0 6px 1px #666, 0 0 6px 1px #666;
+    box-shadow: 0 0 6px 1px #999, 0 0 6px 1px #999;
 }
 
 h2 {
@@ -226,14 +226,14 @@ h2 {
     text-align: center;
     color: #fff;
     text-decoration: overline;
-    /* text-shadow: 0 0 1px grey, 0 0 1px grey; */
+    text-shadow: 0 0 3px #ccc, 0 0 3px #ccc;
     /* background: rgb(228, 228, 228); */
     background: linear-gradient( #ddd 55%, #eee);
     border-bottom-right-radius: 32px;
 }
 
 #leftAbout {
-    box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
+    box-shadow: 0 0 30px 1px #aaa, 0 0 30px 1px #aaa, inset 0 0 4px 1px #ddd, inset 0 0 4px 1px #ddd;
     width: 400px;
     height: 400px;
     display: flex;
@@ -255,7 +255,7 @@ h2 {
 }
 
 #rightAbout {
-    box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
+    box-shadow: 0 0 30px 1px #aaa, 0 0 30px 1px #aaa, inset 0 0 4px 1px #ddd, inset 0 0 4px 1px #ddd;   
     width: 900px;
     min-height: 400px;
     background: #eee;
@@ -283,7 +283,7 @@ h2 {
     margin: 25px auto;
     /* padding: 10px; */
     background: #eee;
-    box-shadow: 0 0 7px 1px #999, 0 0 7px 1px #999;
+    box-shadow: 0 0 8px 1px #bbb, 0 0 8px 1px #bbb;
 }
 
 #container {
@@ -296,7 +296,8 @@ h2 {
     flex-wrap: wrap;
     padding: 80px 20px 0 20px;
     background: #ddd;
-    box-shadow: 0 0 14px 1px #999, 0 0 14px 1px #999;
+    border: 4px solid #fff;
+    box-shadow: 0 0 14px 1px #bbb, 0 0 14px 1px #bbb, inset 0 0 4px 1px #ccc;
     clip-path: inset(0px -15px 0px -15px);
 }
 
@@ -412,7 +413,7 @@ h2 {
     text-align: center;
     color: #fff;
     text-decoration: overline;
-    /* text-shadow: 0 0 1px grey, 0 0 1px grey; */
+    text-shadow: 0 0 3px #ccc, 0 0 3px #ccc;
     /* background: rgb(228, 228, 228); */
     background: linear-gradient( #ddd 55%, #eee);
     border-bottom-right-radius: 32px;
@@ -421,7 +422,7 @@ h2 {
 .projectAbout {
     padding: 15px;
     font-size: 20px;
-    margin: 10px;
+    margin: 5px 10px 5px 10px;
     text-align: center;
 }
 
@@ -444,14 +445,14 @@ h2 {
     text-align: center;
     width: 96%;
     margin: -2px auto;
-    background: #ccc;
+    background: #bbb;
     color: #fff;
     font-size: 26px;
     text-shadow: 0 0 1px #fff, 0 0 1px #fff;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border: 3px solid #eee;
-    box-shadow: 0 0 5px 1px #333, 0 0 5px 1px #333;
+    box-shadow: 0 0 5px 1px #999, 0 0 5px 1px #999, inset 0 0 2px 1px #aaa;
 }
 
 #footerLine {
@@ -464,9 +465,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 4px solid #eee;
+    border-top: 4px solid #fff;
     border-bottom: 4px solid #eee;
     box-shadow: 0 0 8px 2px #808080, 0 0 6px 2px #C0C0C0;
+    box-shadow: 0 0 8px 2px #ccc, 0 0 6px 2px #C0C0C0, inset 0 0 4px 1px #ccc;
 }
 #footer_line {
     font-size: 34px;
@@ -579,7 +581,7 @@ h2 {
     
 
     #aboutDiv {
-        margin: 0;
+        margin-top: 25px;
     }
     
     #headerText {
@@ -605,6 +607,7 @@ h2 {
 
     .projectAbout {
         font-size: 18px;
+        margin: 13px 10px 5px 10px;
     }
 
     #leftAbout {

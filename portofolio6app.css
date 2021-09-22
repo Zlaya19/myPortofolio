@@ -117,7 +117,7 @@ h2 {
     margin: 25px auto;
     /* padding: 10px; */
     background: #eee;
-    box-shadow: 0 0 7px 1px #999, 0 0 7px 1px #999;
+    box-shadow: 0 0 8px 1px #bbb, 0 0 8px 1px #bbb;
 }
 
 #container {
@@ -129,7 +129,8 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     background: #ddd;
-    box-shadow: 0 0 14px 1px #999, 0 0 14px 1px #999;
+    border: 4px solid #fff;
+    box-shadow: 0 0 14px 1px #bbb, 0 0 14px 1px #bbb, inset 0 0 4px 1px #ccc;
     clip-path: inset(0px -15px 0px -15px);
 }
 
@@ -141,12 +142,13 @@ h2 {
 .headline {
     text-align: center;
     padding: 15px 35px;
-    box-shadow: 0 0 4px 1px #333, 0 0 4px 1px #555;
+    box-shadow: 0 0 8px 1px #999, 0 0 8px 1px #999, inset 0 0 4px 1px #ccc;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    background: #ddd;
+    background: #f6f6f6;
+    border: 3px solid #fff;
     color: #444;
     font-size: 36px;
     font-family: 'komika axis';
@@ -172,7 +174,7 @@ h2 {
     text-align: center;
     color: #333;
     font-family: 'komika axis';
-    box-shadow: 0 0 4px 2px #333, 0 0 4px 2px #333;
+    box-shadow: 0 0 4px 2px #999, 0 0 4px 2px #999;
 }
 
 #containerNumb {
@@ -184,7 +186,8 @@ h2 {
     margin: 50px auto;
     border-top-left-radius: 68px;
     border-top-right-radius: 68px;
-    box-shadow: 0 0 25px 1px #999, 0 0 25px 1px #999;
+    border: 4px solid #fff;
+    box-shadow: 0 0 25px 1px #999, 0 0 25px 1px #999, inset 0 0 4px 1px #ccc;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -195,7 +198,7 @@ h2 {
 #outputNumb {
     width: 100%;
     min-height: 100px;
-    background: #ddd;
+    background: #f6f6f6;
     color: #333;
     display: flex;
     justify-content: center;
@@ -203,7 +206,8 @@ h2 {
     text-align: center;
     padding: 15px;
     font-size: 20px;
-    box-shadow: 0 0 4px 1px #222, 0 0 4px 1px #222;
+    border: 4px solid #fff;
+    box-shadow: 0 0 5px 1px #999, 0 0 5px 1px #999, inset 0 0 4px 1px #ccc;
     display: none;
     font-family: 'komika axis';
 }
@@ -242,9 +246,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 4px solid #eee;
+    border-top: 4px solid #fff;
     border-bottom: 4px solid #eee;
     box-shadow: 0 0 8px 2px #808080, 0 0 6px 2px #C0C0C0;
+    box-shadow: 0 0 8px 2px #ccc, 0 0 6px 2px #C0C0C0, inset 0 0 4px 1px #ccc;
 }
 #footer_line {
     font-size: 34px;

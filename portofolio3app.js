@@ -21,69 +21,69 @@ output2.style.fontSize = '35px';
 
 
 numb1.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 1; 
     })
     numb2.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 2; 
     })
     numb3.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 3; 
     })
     numb4.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 4; 
     })
     numb5.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 5; 
     })
     numb6.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 6; 
     })
     numb7.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 7; 
     })
     numb8.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 8; 
     })
     numb9.addEventListener('click', function(){
-    output2.style.color = 'white';
+    output2.style.color = '#555';
     output2.innerText += 9; 
     })
     numb0.addEventListener('click', function(){
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText += 0; 
     })
     plus.addEventListener('click', function(){
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText += '+'; 
     })
     minus.addEventListener('click', function(){
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText += '-'; 
     })
     puta.addEventListener('click', function(){
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText += '*';  
     })
     dijeljenje.addEventListener('click', function(){
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText += '/'; 
     })
     zarez.addEventListener('click', function(){
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText += '.'; 
     })
     
     rezultat.addEventListener('click', function(){
         let result = eval(output2.innerHTML);
-        output2.style.color = 'white';
+        output2.style.color = '#555';
         output2.innerText = result;
 
     })
