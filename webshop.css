@@ -90,6 +90,16 @@ body {
     box-shadow: 0 0 30px 1px #666, 0 0 30px 1px #666;
 }
 
+.partWrapper:hover {
+    transform: scale(1.015);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.partWrapper:not(:hover) {
+    transition: 0.5s;
+}
+
 .topWrapper {
     width: 100%;
     height: 200px;
@@ -118,6 +128,8 @@ body {
 }
 
 .middleWrapper {
+    position: absolute;
+    top: 150px;
     width: 120px;
     height: 120px;
     z-index: 1;
@@ -149,7 +161,7 @@ body {
     font-weight: bold;
     border: none;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-transform: uppercase;
     border: 2px solid grey;
     /* text-shadow: 0 0 2px #666, 0 0 2px #666; */

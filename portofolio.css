@@ -311,16 +311,6 @@ h2 {
     margin: 0 10px 80px 10px;
 }
 
-.wrapper:hover {
-    transform: scale(1.015);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.wrapper:not(:hover) {
-    transition: 0.5s;
-}
-
 .wrapperTop {
     width: 100%;
     height: 50%;
@@ -385,12 +375,12 @@ h2 {
     background: url(images/project9.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-}/*
+}
 #wrap10 {
-    background: url(images/colorChange.png);
+    background: url(images/project10.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-}
+}/*
 #wrap11 {
     background: url(images/colorChange.png);
     background-repeat: no-repeat;
