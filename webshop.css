@@ -9,7 +9,7 @@
 body {
     background: rgb(214, 214, 214);
     font-family: 'KoHo', sans-serif;
-    width: 1350px;
+    width: 85%;
     margin: auto;
     padding: 10px;
     box-shadow: 0 0 30px 1px #666, 0 0 30px 1px #666;
@@ -20,7 +20,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background: whitesmoke;
-    height: 140px;
+    min-height: 140px;
     text-transform: uppercase;
     box-shadow: 0 0 8px 2px #808080, 0 0 6px 2px #C0C0C0;
 }
@@ -59,8 +59,8 @@ body {
 }
 
 #mainWrapper {
-    width: 1330px;
-    height: 2100px;
+    width: 100%;
+    min-height: 2100px;
     background: silver;
     margin: auto;
     display: flex;
@@ -78,6 +78,10 @@ body {
 
 .partWrapper {
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     width: 310px;
     height: 450px;
     background: #ddd;
@@ -114,11 +118,8 @@ body {
 }
 
 .middleWrapper {
-    position: absolute;
     width: 120px;
     height: 120px;
-    left: 95px;
-    top: 140px;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -148,6 +149,7 @@ body {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    margin-bottom: 20px;
     text-transform: uppercase;
     border: 2px solid grey;
     /* text-shadow: 0 0 2px #666, 0 0 2px #666; */
@@ -167,4 +169,53 @@ body {
     align-items: center;
     margin-top: 50px;
     box-shadow: 0 0 6px 1px #888, 0 0 6px 1px #888;
+}
+
+@media screen and (max-width:1150px) {
+    #navbar, #list {
+        flex-direction: column;
+        justify-content: center;
+        grid-gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #list li a {
+        font-size: 28px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+    #mainHeadline {
+        font-size: 64px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    body {
+        width: 100%;
+    }
+
+    #mainHeadline {
+        font-size: 52px;
+    }
+
+    #list li a {
+        font-size: 22px;
+        text-align: center;
+    }
+    .headline {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:390px) {
+    #mainHeadline {
+        font-size: 38px;
+    }
 }
