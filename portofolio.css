@@ -232,6 +232,22 @@ h2 {
     border-bottom-right-radius: 32px;
 }
 
+.fa-facebook-square {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.3;
+    left: 0;
+    bottom: 47px;
+}
+
+.fa-github-square {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.3;
+    left: 0;
+    bottom: 17px;
+}
+
 #leftAbout {
     box-shadow: 0 0 30px 1px #aaa, 0 0 30px 1px #aaa, inset 0 0 4px 1px #ddd, inset 0 0 4px 1px #ddd;
     width: 400px;
@@ -627,5 +643,12 @@ h2 {
         
     #container {
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 365px) {
+    #leftAbout {
+        padding: 0 15px 15px 0;
     }
 }
