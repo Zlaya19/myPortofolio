@@ -199,13 +199,13 @@ span {
 }
 
 #slika2 {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border: 4px solid #fff;
     border-radius: 8px 8px 8px 40px;
     opacity: 0.8;
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 30px;
     box-shadow: 0 0 6px 1px #999, 0 0 6px 1px #999;
 }
@@ -228,24 +228,72 @@ h2 {
     text-decoration: overline;
     text-shadow: 0 0 3px #ccc, 0 0 3px #ccc;
     /* background: rgb(228, 228, 228); */
-    background: linear-gradient( #ddd 55%, #eee);
+    background: linear-gradient( #d4d4d4 5%, #eee);
+    border-bottom-right-radius: 32px;
+}
+
+.headlineAbout {
+    position: absolute;
+    border: none;
+    width: 110px;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    text-decoration: overline;
+    text-shadow: 0 0 3px #ccc, 0 0 3px #ccc;
+    /* background: rgb(228, 228, 228); */
+    background: linear-gradient( #d4d4d4 5%, #eee);
     border-bottom-right-radius: 32px;
 }
 
 .fa-facebook-square {
     position: absolute;
     font-size: 2em;
-    opacity: 0.3;
+    opacity: 0.25;
     left: 0;
-    bottom: 47px;
+    bottom: 137px;
 }
 
 .fa-github-square {
     position: absolute;
     font-size: 2em;
-    opacity: 0.3;
+    opacity: 0.25;
+    left: 0;
+    bottom: 107px;
+}
+
+.fa-twitter-square {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.25;
+    left: 0;
+    bottom: 47px;
+}
+
+.fa-youtube-square {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.25;
+    left: 0;
+    bottom: 77px;
+}
+
+.fa-linkedin::before {
+    display: none;
+}
+
+.fa-linkedin {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.25;
     left: 0;
     bottom: 17px;
+}
+
+.fa-twitter-square:hover, .fa-linkedin:hover, .fa-youtube-square:hover, .fa-github-square:hover, .fa-facebook-square:hover {
+    opacity: 0.4;
 }
 
 #leftAbout {
@@ -254,7 +302,7 @@ h2 {
     height: 400px;
     display: flex;
     justify-content:flex-end;
-    padding: 0 30px 15px 0;
+    padding: 0 30px 20px 0;
     align-items: flex-end;
     background: #eee;
     color: #333;
@@ -418,22 +466,6 @@ h2 {
     background-size: auto;
 }
  */
-
-.headlineAbout {
-    position: absolute;
-    border: none;
-    width: 110px;
-    padding: 15px 20px;
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
-    color: #fff;
-    text-decoration: overline;
-    text-shadow: 0 0 3px #ccc, 0 0 3px #ccc;
-    /* background: rgb(228, 228, 228); */
-    background: linear-gradient( #ddd 55%, #eee);
-    border-bottom-right-radius: 32px;
-}
 
 .projectAbout {
     padding: 15px;
@@ -649,6 +681,18 @@ h2 {
 
 @media screen and (max-width: 365px) {
     #leftAbout {
-        padding: 0 15px 15px 0;
+        padding: 0 15px 20px 0;
+    }
+
+    #slika2 {
+        margin: 0 -15px 20px 0;
+    }
+
+    #headTitle {
+        font-size: 30px;
+    }
+
+    #nation, #job, #linkPage, #gitHub {
+        font-size: 21px;
     }
 }
