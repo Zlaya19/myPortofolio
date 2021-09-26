@@ -14,7 +14,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'lane';
+    src: url('./font/LANENAR_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+:root{
+    --primary: #888;
+    --secondary: #ccc;
+    --container: #eee;
+    --dark: #999;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(110, 110, 110, 0.8);
+    --shadow2:  0 1px 5px #888;
+}
 
 html {
     height: 100%;
@@ -484,8 +499,8 @@ h2 {
     text-decoration: overline;
     /* text-shadow: 0 0 1.5px #fff, 0 0 1.5px #fff; */
     background: rgb(228, 228, 228);
-    background: linear-gradient( #ddd 55%, #fff);
-    background: -webkit-linear-gradient(top, #ddd 30%,rgba(255,255,255,0) 100%);
+    background: linear-gradient( #d4d4d4 55%, #fff);
+    background: -webkit-linear-gradient(top, #d4d4d4 30%,rgba(255,255,255,0) 100%);
     border-bottom-right-radius: 32px;
 }
 

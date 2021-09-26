@@ -25,6 +25,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'lane';
+    src: url('./font/LANENAR_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -102,10 +108,12 @@ img {
 #wordWrap {
     padding: 100px 100px 70px 100px;
     color: #333;
+    font-family: 'lane';
 }
 
 
 #firstDiv {
+    position: relative;
     width: 800px;
     padding: 50px 100px 50px 100px;
     margin: 30px auto;
@@ -139,6 +147,7 @@ spanB {
 spanC {
     padding: 0px 7px 0px 7px;
     border-radius: 4px;
+    font-family: 'lane';
     text-shadow: 0 0 3px #eee, 0 0 3px #eee;
     background: rgb(212, 175, 246);
     color:white;
@@ -167,16 +176,22 @@ spanD {
     line-height: 1.2;
 }
 span {
-    padding: 8px 25px 8px 25px;
+    position: absolute;
+    top:0;
+    left:0;
     border: none;
-    font-size: 18px;
-    box-shadow: 0 0 3px 1px #C0C0C0, 0 0 3px 1px #C0C0C0;
-    background: #FFFAFA;
-    /* border-top-right-radius: 85px;
-    border-top-left-radius: 85px; */
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 8px;
+    width: 110px;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 0 0 1px grey, 0 0 1px grey;
+    background: #ebebeb;
+    border-bottom-right-radius: 32px;
 }
+
 #secondNav {
     margin-top: 10px;
     min-height: 70px;
@@ -190,13 +205,6 @@ span {
     box-shadow: 0 5px 5px rgba(218, 218, 218, 0.75);
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-
 
 
 #container {
