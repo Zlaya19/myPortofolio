@@ -14,13 +14,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'lane';
-    src: url('./font/LANENAR_-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root{
     --primary: #888;
     --secondary: #ccc;
