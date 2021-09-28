@@ -113,6 +113,7 @@ h2 {
 }
 
 #container {
+    position: relative;
     width: 90%;
     min-height: 550px;
     margin: auto;
@@ -120,6 +121,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 100px 0 50px 0;
     background: #ddd;
     border: 4px solid #fff;
     box-shadow: 0 0 14px 1px #bbb, 0 0 14px 1px #bbb, inset 0 0 4px 1px #ccc;
@@ -173,7 +175,13 @@ h2 {
 
 
 
-
+#headlineGame {
+    position: absolute;
+    top:0;
+    color: #fff;
+    font-family: 'aaargh';
+    text-shadow: 0 0 30px #999, 0 0 30px #999;
+}
 
 
 
@@ -204,13 +212,15 @@ h2 {
     width: 150px;
     height: 150px;
     border: 2px solid #333;
+    border: 4px solid #fff;
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 42px;
-    box-shadow: 0 0 5px 2px #333, 0 0 5px 2px;
-    background: #eee;
+    opacity: 0.8;
+    box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
+    background: #ddd;
     /* background: linear-gradient( white, #ccc); */
     cursor: pointer;
 }
@@ -240,8 +250,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #333;
     box-shadow: 0 0 12px 1px #999;
     background: #eee;
+    box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
+    background: #ddd;
     /* background: linear-gradient( white, #ccc); */
     border: 4px solid #fff;
 }
@@ -269,8 +282,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #333;
     box-shadow: 0 0 12px 1px #999;
     background: #eee;
+    box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
+    background: #ddd;
     /* background: linear-gradient( white, #ccc); */
     border: 4px solid #fff;
 }
@@ -283,7 +299,8 @@ h2 {
     justify-content: center;
     align-items: center;
     display: flex;
-    box-shadow: 0 0 12px 1px #999;
+    color: #333;
+    box-shadow: /* 0 0 12px 1px #999 */ inset 0 0 6px 2px #ccc;
     background: #eee;
     /* background: linear-gradient( white, #ccc); */
     border: 4px solid #fff;
@@ -314,6 +331,10 @@ span-rock {
     align-items: center;
     border-radius: 100px;
     box-shadow: 0 0 12px 2px #333, 0 0 5px 2px;
+    box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
+    background: #fff;
+    /* background: linear-gradient( white, #ccc); */
+    border: 4px solid #fff;
 }
 
 .class_div {
