@@ -177,7 +177,7 @@ h2 {
 
 #headlineGame {
     position: absolute;
-    top:0;
+    top:20px;
     color: #fff;
     font-family: 'aaargh';
     text-shadow: 0 0 30px #999, 0 0 30px #999;
@@ -187,7 +187,7 @@ h2 {
 
 #user_div {
     width: 700px;
-    min-height: 300px;
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -227,7 +227,7 @@ h2 {
 
 #comp_div {
     width: 800px;
-    min-height: 300px;
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -380,6 +380,12 @@ span-rock {
     font-size: 34px;
 }
 
+@media screen and (max-width: 1350px) {
+    #headlineGame {
+        font-size: 56px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     #list {
@@ -412,8 +418,9 @@ span-rock {
         width: 100%;
     }
 
-    .projectSection, .projectSection3, .projectSection2 {
-        width: 700px
+    #headlineGame {
+        font-size: 48px;
+        text-align: center;
     }
 
     .appProject {
@@ -455,7 +462,12 @@ span-rock {
 
 
 
-
+@media screen and (max-width: 900px) {
+    #headlineGame {
+        font-size: 40px;
+        text-align: center;
+    }
+}
 
 
 
@@ -491,4 +503,128 @@ span-rock {
         display: none;
     }
 
+    #container {
+        padding: 120px 0 50px 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #realResult {
+        font-size: 40px;
+    }
+    span-rock {
+        font-size: 40px;
+    }
+
+    #headlineGame {
+        top: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #schäre, #stein, #papir {
+        width: 120px;
+    }
+
+    #user_points, #comp_points {
+        width: 100px;
+    }
+
+    #result {
+        width: 120px;
+        height: 150px;
+    }
+
+    #miniDiv {
+        width: 100px;
+        height: 100px;
+    }
+
+    .class_div {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    #schäre, #stein, #papir {
+        width: 100px;
+    }
+
+    #user_points, #comp_points {
+        width: 80px;
+    }
+
+    #headlineGame {
+        font-size: 32px;
+    }
+
+    #result {
+        width: 100px;
+        height: 120px;
+    }
+
+    #miniDiv {
+        width: 80px;
+        height: 80px;
+    }
+
+    .class_div {
+        width: 80px;
+    }
+
+    #user_div {
+        height: 200px;
+    }
+
+    #comp_div {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #user_div, #comp_div {
+        height: 180px;
+    }
+
+    #schäre, #stein, #papir {
+        width: 85px;
+        height: 100px;
+    }
+
+    #realResult {
+        height: 60px;
+    }
+
+    #user_points, #comp_points {
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    #result {
+        width: 80px;
+        height: 100px;
+    }
+
+    #miniDiv {
+        width: 70px;
+        height: 70px;
+    }
+
+    .class_div {
+        width: 70px;
+    }
 }
