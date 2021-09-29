@@ -82,7 +82,6 @@ const userPoints = document.getElementById('user_points');
       result.innerHTML = '<span-rock>' + 'Game is over!' + '</span-rock>';
       if(userScore == broj){
         userPoints.style.background = '#4dffa6';
-        userPoints.style.transform = 'scale(1.2)';
         compPoints.style.background = '#FF6666';
         img.src = 'bilder/smile.png';
         compTurn.style.backgroundImage = 'bilder/smile.png';
@@ -90,7 +89,6 @@ const userPoints = document.getElementById('user_points');
       else if(compScore = broj){
         userPoints.style.background = '#FF6666'; 
         compPoints.style.background = '#4dffa6';
-        compPoints.style.transform = 'scale(1.2)';
         img.src = 'bilder/sad.png';
         compTurn.style.backgroundImage = 'bilder/sad.png';
       }
@@ -164,7 +162,6 @@ const userPoints = document.getElementById('user_points');
       result.innerHTML = '<span-rock>' + 'Game is over!' + '</span-rock>';
       if(userScore == broj){
         userPoints.style.background = '#4dffa6';
-        userPoints.style.transform = 'scale(1.2)';
         compPoints.style.background = '#FF6666';
         img.src = 'bilder/smile.png';
         compTurn.style.backgroundImage = 'bilder/smile.png';
@@ -172,7 +169,6 @@ const userPoints = document.getElementById('user_points');
       else if(compScore = broj){
         userPoints.style.background = '#FF6666';
         compPoints.style.background = '#4dffa6';
-        compPoints.style.transform = 'scale(1.2)';
         img.src = 'bilder/sad.png';
         compTurn.style.backgroundImage = 'bilder/sad.png';
       }
@@ -246,7 +242,6 @@ const userPoints = document.getElementById('user_points');
       result.innerHTML = '<span-rock>' + 'Game is over!' + '</span-rock>';
       if(userScore == broj){
         userPoints.style.background = '#4dffa6';
-        userPoints.style.transform = 'scale(1.2)';
         compPoints.style.background = '#FF6666';
         img.src = 'bilder/smile.png';
         compTurn.style.backgroundImage = 'bilder/smile.png';
@@ -254,7 +249,6 @@ const userPoints = document.getElementById('user_points');
       else if(compScore = broj){
         userPoints.style.background = '#FF6666';
         compPoints.style.background = '#4dffa6';
-        compPoints.style.transform = 'scale(1.2)';
         img.src = 'bilder/sad.png';
         compTurn.style.backgroundImage = 'bilder/sad.png';
       }

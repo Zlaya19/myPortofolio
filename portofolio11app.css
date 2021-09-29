@@ -332,7 +332,7 @@ span-rock {
     border-radius: 100px;
     box-shadow: 0 0 12px 2px #333, 0 0 5px 2px;
     box-shadow: 0 0 30px 1px #999, 0 0 30px 1px #999;
-    background: #fff;
+    background: whitesmoke;
     /* background: linear-gradient( white, #ccc); */
     border: 4px solid #fff;
 }
@@ -444,7 +444,7 @@ span-rock {
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 46px;
     }
  
     span-rock {
@@ -540,6 +540,10 @@ span-rock {
         height: 150px;
     }
 
+    h1 {
+        font-size: 34px;
+    }
+
     #miniDiv {
         width: 100px;
         height: 100px;
@@ -548,7 +552,21 @@ span-rock {
     .class_div {
         width: 100px;
     }
+
+    .class_div {
+        padding: 10px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+    #realResult {
+        margin: 20px 0;
+    }
 
 @media screen and (max-width: 420px) {
 
@@ -558,6 +576,8 @@ span-rock {
 
     #user_points, #comp_points {
         width: 80px;
+        height: 100px;
+        font-size: 75px;
     }
 
     #headlineGame {
@@ -576,6 +596,7 @@ span-rock {
 
     .class_div {
         width: 80px;
+        padding: 3px;
     }
 
     #user_div {
@@ -589,6 +610,7 @@ span-rock {
     h1 {
         font-size: 27px;
     }
+    
 }
 
 @media screen and (max-width: 350px) {
@@ -608,6 +630,8 @@ span-rock {
 
     #user_points, #comp_points {
         width: 70px;
+        height: 80px;
+        font-size: 60px;
     }
 
     h1 {
