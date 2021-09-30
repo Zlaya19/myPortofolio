@@ -139,7 +139,7 @@ h2 {
     border-bottom-right-radius: 60px;
     background: #eee;
     border: 4px solid #fff;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
 }
 
 spanB {
@@ -340,7 +340,7 @@ spanB {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 540px) {
     #containerCalc {
         width: 400px;
         height: 240px;
@@ -359,8 +359,14 @@ spanB {
     } 
 }
 
-
 @media screen and (max-width: 500px) {
+    #container {
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
 
     #container {
         height: 300px;
@@ -371,7 +377,7 @@ spanB {
     }
 
     #containerCalc {
-        width: 350px;
+        width: 100%;
         height: 220px;
     }
 
@@ -380,10 +386,10 @@ spanB {
     }
 
     spanB {
-        font-size: 28px;
+        font-size: 30px;
     }
     .btnClass {
-        font-size: 15px;
+        font-size: 19px;
         height: 50px;
         width: 28%;
         text-align: center;
@@ -394,14 +400,28 @@ spanB {
     
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 380px) {
     #containerCalc {
-        width: 280px;
+        width: 100%;
+    }
+
+    .btnClass {
+        font-size: 17px;
+    }
+    spanB {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #containerCalc {
+        width: 100%;
         height: 190px;
     }
 
     #red {
         height: 60px;
+        grid-gap: 5px;
     }
 
     spanB {
@@ -409,6 +429,7 @@ spanB {
     }
     .btnClass {
         font-size: 15px;
+        width: 30%;
         height: 40px;
         text-align: center;
     }
