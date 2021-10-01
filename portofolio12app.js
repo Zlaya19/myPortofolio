@@ -59,7 +59,7 @@ window.addEventListener('load', function(){
             wrongCube();
             correctCube();
 
-        naslov.innerHTML = '<span>' + wrongElement + '</span>' + '<h1>' + 'Press only ' + inputColor + " cube's" + '</h1>' + '<p>' + chosenColor + '</p>';
+        naslov.innerHTML = '<span>' + wrongElement + '</span>' + '<h1>' + 'Press only ' + inputColor + " cube's" + '</h1>' + '<span>' + chosenColor + '</span>';
 
             /*  
                 If you click on an golden element. it disapears.
@@ -75,24 +75,25 @@ window.addEventListener('load', function(){
                 element.remove();
             }else{
 
-                element.innerHTML = '<h2>X</h2>';
+                element.innerHTML = '<h2 class="wrongElement">X</h2>';
 
                     if(wrongElement >= 3){
 
                         setTimeout(function(){
                             let divElement = document.createElement('div');
-                            const h1poraz = document.createElement('h1')
+                            const h1poraz = document.createElement('h1');
                             let img = document.createElement('img');
                             img.src = 'bilder/sad.png';
-                            h1poraz.innerHTML = '<span>' + 'Try again, press ctrl + F5' + '</span>';
+                            h1poraz.innerHTML = '<spanB>' + 'Try again, press ctrl + F5' + '</spanB>';
                             naslov.innerHTML = '<h1>' + 'You had ' + wrongElement +  ' mistakes'  + '</h1>';
                             container.innerHTML = '';
-                            img.setAttribute('height', '350px');
-                            img.setAttribute('width', '350px');
+                            img.setAttribute('height', '300px');
+                            img.setAttribute('width', '300px');
                             img.classList.add('shadow');
-                            container.style.backgroundImage = 'bilder/smile.png';
+                            container.style.backgroundImage = 'bilder/sad.png';
                             divElement.classList.add('class_div');
-                            divElement.appendChild(img)
+                            divElement.appendChild(img);
+                            container.classList.add('container');
                             container.appendChild(divElement);
                             container.appendChild(h1poraz);
                         },700)   
@@ -123,16 +124,17 @@ window.addEventListener('load', function(){
                         let divElement = document.createElement('div');
                         let img = document.createElement('img');
                         const h1Pobjeda = document.createElement('h1');
-                        h1Pobjeda.innerHTML = '<span>' + 'You are the winner!' + '</span>';
+                        h1Pobjeda.innerHTML = '<spanB>' + 'You are the winner!' + '</spanB>';
                         img.src = 'bilder/smile.png';
                         naslov.innerHTML = '<h1>Win</h1>';
                         container.innerHTML = '';
-                        img.setAttribute('height', '350px');
-                        img.setAttribute('width', '350px');
+                        img.setAttribute('height', '300px');
+                        img.setAttribute('width', '300px');
                         img.classList.add('shadow');
                         container.style.backgroundImage = 'bilder/smile.png';
                         divElement.classList.add('class_div');
                         divElement.appendChild(img);
+                        container.classList.add('container');
                         container.appendChild(divElement);
                         container.appendChild(h1Pobjeda);             
                 };       
