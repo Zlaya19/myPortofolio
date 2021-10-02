@@ -305,7 +305,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
     #containerYear {
-        width: 400px;
+        width: 100%;
     }
 
     .headline {
@@ -321,9 +321,9 @@ h2 {
 
 @media screen and (max-width: 500px) {
 
-    #containerYear {
+    /* #containerYear {
         width: 280px;
-    }
+    } */
     
     .headline {
         width: 90%;
@@ -339,4 +339,13 @@ h2 {
         font-size: 17px;
     }
 
+}
+
+
+@media screen and (max-width: 400px) {
+    .headline {
+    width: 80%;
+    font-size: 22px;
+    padding: 15px 5px;
+    }
 }
