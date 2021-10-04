@@ -369,6 +369,7 @@ span-rock {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-top: 3px solid #fff;
     box-shadow: 0 0 30px 1px rgb(233, 232, 232), 0 0 30px 1px rgb(228, 227, 227);
 }

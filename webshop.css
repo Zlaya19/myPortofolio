@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap'); */
+
+@font-face {
+    font-family: 'aaargh';
+    src: url('./font/Aaargh-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url('./font/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
@@ -8,7 +22,7 @@
 
 body {
     background: rgb(214, 214, 214);
-    font-family: 'KoHo', sans-serif;
+    font-family: 'aaargh';
     width: 85%;
     margin: auto;
     padding: 10px;
@@ -175,10 +189,12 @@ body {
 #footerLine {
     height: 140px;
     background: silver;
+    font-family: 'rajdhani';
     display: flex;
     font-size: 28px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 50px;
     box-shadow: 0 0 6px 1px #888, 0 0 6px 1px #888;
 }
