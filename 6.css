@@ -8,34 +8,48 @@ body{
     text-transform: uppercase;
     background:rgb(54, 54, 54);
 }
-nav{
-    overflow: hidden;
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 90px;
+
+    /* overflow: hidden; */
     height: 100px;
-    line-height: 40px;
+    /* line-height: 40px; */
     background: #a7da35;
     width:100%;
     box-shadow: 0 0 5px 2px black, 0 0 5px 2px black;
     border-radius: 0px 0px 55px 0px;
 }
 
+#list {
+    display: flex;
+    grid-gap: 80px;
+    list-style: none;
+    font-size: 24px;
+}
+#list li a {
+    color: #000000;
+    text-decoration: none;
+}
+
 nav a{
-    position:relative;
-    float:right;
-    display:block;
+    /* display:block; */
     border: none;
     box-shadow: 0 0 4px 1px black, 0 0 4px 1px black;
     background: rgb(54, 54, 54);
-    color:white;
-    width:200px;
+    color:#ffffff;
+    width: 200px;
     font-family: courier new;
     text-align: center;
     border-radius: 30px 7px 30px 7px;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
-    padding:5px 0px 5px 0px;
-    margin-top:35px;
-    margin-right: 45px;
+    margin: 20px 0;
+    padding: 20px 0;
 }
 #cc{
     margin-right:205px;
@@ -279,7 +293,30 @@ footer{
     text-shadow: 0 0 5px black, 0 0 5px black;
     display: flex;
 }
-#bottom-wrapper{
+
+#bottom-wrapper {
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 630px;
+    border:2px solid #a7da35;
+    border-radius: 30px;
+    background:rgb(31, 31, 31);
+    box-shadow: 0 0 5px 2px black, 0 0 5px 2px black;
+}
+
+#top-input {
+    top: 20px;
+    display: flex;
+    margin: 0;
+    position: absolute;
+}
+
+/* #bottom-wrapper{
     display:grid;
     max-width:40%;
     margin: auto;
@@ -300,10 +337,11 @@ footer{
     justify-content: center;
     align-items: center;
     display: flex;
-}
+} */
 #input{
-    padding:7px 25px 7px 25px;
+    padding:8px 25px 8px 25px;
     border:3px solid black;
+    font-size: 15px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -319,7 +357,7 @@ footer{
     background:#a7c95e
 }
 #btn{
-    padding: 7px 15px 7px 15px;
+    padding: 8px 15px 8px 15px;
     border:3px solid black;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -348,7 +386,7 @@ span{
     text-shadow: 0 0 3px black, 0 0 3px black;
 }
 .text{
-    width:75%;
+    width: 1190px;
     border:3px solid #a7da35;
     background:rgb(31, 31, 31);
     color:white;
@@ -366,7 +404,7 @@ span{
 }
 #uvod{
     
-        width:40%;
+        width: 635px;
         border:3px solid #a7da35;
         background:rgb(31, 31, 31);
         color:white;
@@ -386,7 +424,7 @@ section span{
     font-size: 32px;
 }
 #uvodA{
-        width:40%;
+        width: 635px;
         border:3px solid #a7da35;
         background:rgb(31, 31, 31);
         color:white;
@@ -401,7 +439,7 @@ section span{
         text-shadow: 0 0 5px black, 0 0 5px black;
 }
 #uvodB{
-    width:40%;
+    width: 635px;
     border:3px solid #a7da35;
     background:rgb(31, 31, 31);
     color:white;
@@ -416,7 +454,7 @@ section span{
     text-shadow: 0 0 5px black, 0 0 5px black;
 }
 #uvodC{  
-    width:40%;
+    width: 635px;
     border:3px solid #a7da35;
     background:rgb(31, 31, 31);
     color:white;
@@ -467,12 +505,27 @@ nav img {
     border-bottom-right-radius: 55px;
     box-shadow: 0 0 5px 1px black, 0 0 5px 1px black;
   }
-  @media(max-width:750px){
-    #bottom-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+
+  @media(max-width:1500px) {
+
+    .navbar {
+        width: 100%;
     }
+
+        .image, .logos, .logosi{
+            display: none;
+        }
+    }
+
+  @media(max-width:1250px) {
+    .text {
+        width: 95%;
+    }
+  }
+
+
+  @media(max-width:750px){
+
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -488,12 +541,23 @@ nav img {
         flex-wrap: wrap;
         flex-direction: column;
     }
-    #alfa {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        
+
+    #uvod, #uvodA, #uvodB, #uvodC {
+        width: 80%;
     }
 
+    #bottom-wrapper {
+        width: 85%;
+    }
+}
+
+    @media(max-width:500px) {
+        #uvod, #uvodA, #uvodB, #uvodC {
+            width: 95%;
+    }
+
+    #bottom-wrapper {
+        width: 95%;
+    }
 }
   
