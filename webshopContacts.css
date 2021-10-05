@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap'); */
 
 @font-face {
     font-family: 'aaargh';
@@ -83,11 +82,12 @@ body {
 
 #mainWrapper {
     width: 100%;
-    min-height: 2100px;
+    min-height: 380px;
     background: #c0c0c0;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
@@ -98,6 +98,64 @@ body {
     grid-template-columns: repeat(3, 1fr);
     /* box-shadow: 8px 0 15px -4px rgba(100, 100, 100, 0.8), -8px 0 8px -4px rgba(100, 100, 100, 0.8); */
 }
+
+
+#paragraph {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+.fa-facebook-square {
+    
+    font-size: 4em;
+    opacity: 0.40;
+    margin:2px;
+    
+}
+
+.fa-github-square {
+    
+    font-size: 4em;
+    opacity: 0.40;
+    margin:2px;
+    
+}
+
+.fa-twitter-square {
+    
+    font-size: 4em;
+    opacity: 0.40;
+    margin:2px;
+    
+}
+
+.fa-youtube-square {
+    
+    font-size: 4em;
+    opacity: 0.40;
+    margin:2px;
+    
+}
+
+.fa-linkedin::before {
+    display: none;
+}
+
+.fa-linkedin {
+    
+    font-size: 4em;
+    opacity: 0.40;
+    margin:2px;
+    
+}
+
+#links {
+    display: flex;
+}
+
 
 .partWrapper {
     position: relative;
@@ -249,6 +307,11 @@ body {
     }
     .headline {
         margin: auto;
+    }
+
+    #paragraph {
+        font-size: 16px;
+        text-align: center;
     }
 }
 
