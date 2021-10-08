@@ -268,21 +268,71 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 4px;
 }
 
-#output2 {
+#outputOut {
     width:100%;
-    height: 150px;
+    height: 143px;
+    margin-top: 4px;
     box-shadow: inset 0 0 4px 1px #ccc;
     background: #eee;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#output {
+    position: relative;
+    width:98%;
+    height: 70px;
+    /* box-shadow: inset 0 0 4px 1px #ccc; */
+    background: #eee;
+    margin-top: 10px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     display: flex;
     color: #555;
     flex-wrap: wrap;
     justify-content:flex-end;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-right: 20px;
+    font-size: 20px;
+    font-family: 'rajdhani';
+}
+
+.classSpan {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top:0;
+    /* margin-left: 7px; */
+    cursor: default;
+}
+
+span {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top:0;
+    left: 7px;
+    /* margin-left: 7px; */
+    opacity: 0.3;
+    cursor: default;
+}
+
+#output2 {
+    width:98%;
+    height: 75px;
+    background: #eee;
+    display: flex;
+    color: #555;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    padding-right: 15px;
     font-size: 20px;
     font-family: 'rajdhani';
 }

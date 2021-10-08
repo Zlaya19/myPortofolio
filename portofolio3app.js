@@ -1,4 +1,5 @@
 
+const output = document.getElementById('output');
 const output2 = document.getElementById('output2');
 
 const numb1 = document.getElementById('numb1');
@@ -83,10 +84,21 @@ numb1.addEventListener('click', function(){
     
     rezultat.addEventListener('click', function(){
         let result = eval(output2.innerHTML);
+        output.innerText = output2.innerHTML;
         output2.style.color = '#555';
         output2.innerText = result;
 
     })
-    output2.addEventListener('click', function(){
+    output.addEventListener('click', function(){
+        output.innerText += '';
         output2.innerText = '';
+        output.classList.add('classSpan');
+        output.innerHTML = `<span>AC<span>`;
+    })
+
+    output2.addEventListener('click', function(){
+        output.innerText += '';
+        output2.innerText = '';
+        output.classList.add('classSpan');
+        output.innerHTML = `<span>AC<span>`;
     })
