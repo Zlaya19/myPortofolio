@@ -21,7 +21,7 @@ a {
 
 body {
     min-height: 1000px;
-    width: 1350px;
+    width: 90%;
     margin: auto;
     box-shadow: 0 0 30px 1px rgb(223, 223, 223), 0 0 30px 1px rgb(212, 212, 212);
 }
@@ -44,7 +44,7 @@ body {
 
 #container {
     display: flex;
-    width: 1200px;
+    width: 90%;
     min-height: 800px;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,7 +127,7 @@ h2 {
 
 .projectSection {
     position: relative;
-    width: 1200px;
+    width: 90%;
     min-height: 800px;
     margin: auto;
     margin-top: 70px;
@@ -140,10 +140,7 @@ h2 {
     box-shadow: 0 0 8px 2px grey, 0 0 6px 2px silver;
     /* background: snow; */
     /* box-shadow: 0 0 12px 1px rgb(209, 209, 209), 0 0 16px 1px rgb(219, 219, 219); */
-    border-top-right-radius: 38px;
-    border-top-left-radius: 38px;
-    border-bottom-right-radius: 38px;
-    border-bottom-left-radius: 38px;
+    border-radius: 38px;
 }
 
 #headlineCube {
@@ -229,7 +226,7 @@ h2 {
 }
 
 #footerLine {
-    width: 1350px;
+    width: 100%;
     height: 200px;
     background: whitesmoke;
     display: flex;
@@ -254,7 +251,7 @@ h2 {
         flex-direction: column;
         grid-gap: 0;
         padding: 10px;
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
     }
 }
@@ -262,26 +259,207 @@ h2 {
 @media(max-width:1100px){
 
     .projectSection {
-        width: 700px;
-        height: 1900px;
+        width: 90%;
+        min-height: 1000px;
+
     }
 
     #container {
-        width: 700px;
-        height: 1900px;
+        width: 90%;
+        min-height: 1000px;
+        padding: 30px 0;
+        margin: 0;
     }
 
     #headlineColor {
         font-size: 40px;
+        padding: 0 30px;
     }
  
     h1 {
         font-size: 48px;
     }
 
-    /* .classDiv {
+    .classDiv {
         width: 130px;
         height: 130px;
     }
- */
+
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 120px;
+    }
+
+    .projectSection {
+        width: 100%;
+        min-height: 1000px;
+        border-radius: 0;
+    }
+
+    #naslov {
+        border-radius: 0;
+    }
+}
+
+@media(max-width:600px) {
+
+    .projectSection {
+        width: 100%;
+        min-height: 800px;
+        border-radius: 0;
+        margin: 40px 0;
+    }
+
+    #PRo1 {
+        margin: 40px auto;
+    }
+
+    h1 {
+       font-size: 35px;
+    }
+
+    span {
+        font-size: 50px;
+    }
+
+    #container {
+        width: 100%;
+        min-height: 800px;
+    }
+
+    .classDiv {
+        width: 110px;
+        height: 110px;
+    }
+
+    #list {
+        font-size: 36px;     
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #container {
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    #naslov {
+        width: 100%;
+    }
+
+    .classDiv {
+        width: 110px;
+        height: 110px;
+    }
+
+    span {
+        font-size: 36px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    spanB {
+        font-size: 36px;
+    }
+
+    div.class_div {
+        width: 210px;
+        height: 210px;
+    }
+
+    img.shadow {
+        width: 210px;
+        height: 210px;
+    }
+
+    .wrongElement {
+        font-size: 100px;
+    }
+
+    .projectSection {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .classDiv {
+        width: 90px;
+        height: 90px;
+    }
+
+    .projectSection {
+        margin: 30px 0;
+    }
+
+    #headlineColor {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 34px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    #list {
+        font-size: 30px;     
+    }
+
+    #container {
+        padding: 20px 10px;
+        min-height: 850px;
+    }
+
+    #PRo1 {
+        font-size: 35px;
+        width: 220px;
+    }
+
+    h2 {
+        font-size: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    spanB {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 75px;
+    }
+
+    .classDiv {
+        width: 70px;
+        height: 70px;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #PRo1 {
+        font-size: 30px;
+    }
+
+    #slika {
+        width: 250px;
+    }
+    
 }

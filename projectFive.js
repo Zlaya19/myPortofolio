@@ -40,7 +40,7 @@ window.addEventListener('load', function(){
             console.log(chosenColor++)
         };
 
-    naslov.innerHTML = '<span>' + wrongElement + '</span>' + '<h1>' + 'Press only ' + inputColor + " cube's"  + '</h1>' + '<p>' + chosenColor + '</p>';
+    naslov.innerHTML = '<span>' + wrongElement + '</span>' + '<h1>' + 'Press only ' + inputColor + " cube's"  + '</h1>' + '<span>' + chosenColor + '</span>';
 
     // Mouseenter, mouseleave & mouseclick events for the element items (transform, margin, rotate & functions)
 
@@ -59,7 +59,7 @@ window.addEventListener('load', function(){
             wrongCube();
             correctCube();
 
-        naslov.innerHTML = '<span>' + wrongElement + '</span>' + '<h1>' + 'Press only ' + inputColor + " cube's" + '</h1>' + '<p>' + chosenColor + '</p>';
+        naslov.innerHTML = '<span>' + wrongElement + '</span>' + '<h1>' + 'Press only ' + inputColor + " cube's" + '</h1>' + '<span>' + chosenColor + '</span>';
 
             /*  
                 If you click on an golden element. it disapears.
