@@ -18,7 +18,7 @@ a {
 
 body {
     min-height: 1000px;
-    width: 1350px;
+    width: 90%;
     margin: auto;
     box-shadow: 0 0 30px 1px rgb(223, 223, 223), 0 0 30px 1px rgb(212, 212, 212);
 }
@@ -117,8 +117,8 @@ input[type="text"]:not(:hover) {
 
 .projectSection {
     position: relative;
-    width: 1200px;
-    min-height: 800.6px;
+    width: 90%;
+    height: 800.6px;
     margin: auto;
     background:whitesmoke;
     display: flex;
@@ -128,10 +128,7 @@ input[type="text"]:not(:hover) {
     box-shadow: 0 0 8px 2px grey, 0 0 6px 2px silver;
     /* background: snow; */
     /* box-shadow: 0 0 12px 1px rgb(209, 209, 209), 0 0 16px 1px rgb(219, 219, 219); */
-    border-top-right-radius: 38px;
-    border-top-left-radius: 38px;
-    border-bottom-right-radius: 38px;
-    border-bottom-left-radius: 38px;
+    border-radius: 38px;
     margin-bottom: 70px;
 }
 
@@ -142,7 +139,7 @@ input[type="text"]:not(:hover) {
 
 #user_div {
     width: 700px;
-    min-height: 300px;
+    height: 300px;
     box-shadow: 0 0 7px 1px grey, 0 0 7px 1px grey;
     display: flex;
     justify-content: space-evenly;
@@ -176,7 +173,7 @@ input[type="text"]:not(:hover) {
 
 #comp_div {
     width: 800px;
-    min-height: 300px;
+    height: 300px;
     box-shadow: 0 0 7px 1px grey, 0 0 7px 1px grey;
     display: flex;
     background: snow;
@@ -350,7 +347,7 @@ span-rock {
 @media(max-width:1100px){
 
     body {
-        width: 100%;
+        width: 90%;
     }
 
     .projectSection, .projectSection3, .projectSection2 {
@@ -393,3 +390,183 @@ span-rock {
     }
 
 }
+
+@media(max-width:750px) {
+    .projectSection {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #comp_div, #user_div {
+        width: 90%;
+    }
+
+    /* #schäre, #stein, #papir {
+
+    } */
+}
+
+
+@media screen and (max-width: 600px) {
+    #realResult {
+        font-size: 40px;
+    }
+    span-rock {
+        font-size: 40px;
+    }
+
+    #headlineGame {
+        top: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #schäre, #stein, #papir {
+        width: 120px;
+    }
+
+    #user_points, #comp_points {
+        width: 100px;
+    }
+
+    #result {
+        width: 120px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    #miniDiv {
+        width: 100px;
+        height: 100px;
+    }
+
+    .class_div {
+        width: 100px;
+    }
+
+    .class_div {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #realResult {
+        margin: 20px 0;
+    }
+
+    #headlineColor {
+        padding: 0 10px;
+    }
+}
+
+    
+
+@media screen and (max-width: 420px) {
+
+    #schäre, #stein, #papir {
+        width: 100px;
+    }
+
+    #user_points, #comp_points {
+        width: 80px;
+        height: 100px;
+        font-size: 75px;
+    }
+
+    .projectSection {
+        height: 550px;
+    }
+
+    #headlineColor {
+        font-size: 34px;
+    }
+
+    #headlineGame {
+        font-size: 32px;
+    }
+
+    #result {
+        width: 100px;
+        height: 120px;
+    }
+
+    #miniDiv {
+        width: 80px;
+        height: 80px;
+    }
+
+    .class_div {
+        width: 80px;
+        padding: 3px;
+    }
+
+    #user_div {
+        height: 200px;
+    }
+
+    #comp_div {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    #schäre, #stein, #papir {
+        width: 85px;
+        height: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+
+    #user_div, #comp_div {
+        height: 180px;
+    }
+
+    #realResult {
+        height: 60px;
+    }
+
+    .projectSection {
+        height: 500px;
+    }
+
+    #user_points, #comp_points {
+        width: 70px;
+        height: 80px;
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    #result {
+        width: 80px;
+        height: 100px;
+    }
+
+    #miniDiv {
+        width: 70px;
+        height: 70px;
+    }
+
+    .class_div {
+        width: 70px;
+    }
+}
+
+
